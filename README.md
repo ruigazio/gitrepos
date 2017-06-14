@@ -2,7 +2,7 @@
 
 Thank you for taking the time to do our technical test.
 
-Please submit your results by email to *email here* in a zip file. 
+Please submit your results by email to *email here* in a zip file.
 
 The archive needs to contain:
 - README.md with instructions on how to start the application
@@ -17,7 +17,7 @@ Feature
 Scenario: Retrieve Github user's repositories
 	When I type an existing Github username
 	And I click "Get Repositories"
-	Then I can see the user's top 10 repositories
+	Then I can see the user's top 10 repositories by number of stars.
 
 ## Design
 You can find in `design.png` the required designs to be implemented.
@@ -26,9 +26,6 @@ You can find in `design.png` the required designs to be implemented.
 The application needs to be implemented as a desktop web application, architectured in the following fashion:
 	- Backend: nodejs backend (preferably Express) responsible of querying the Github APIs
 	- Frontend: preferably React based application, querying the nodejs backend
-	
+
 Bonus points:
 	- Responsive layout
-	
-	
-
