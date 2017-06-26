@@ -1,13 +1,13 @@
-# Full Stack Engineer homework #
+# Full Stack Engineer Coding Challenge #
 
 This challenge forms part of the interview process for the ASI Data Science engineering team. If you're interesting in helping us build a truly innovative data science platform, please get in contact at www.asidatascience.com.
 
-Once you've completed the challenge, please deploy your your application behind a public facing URL so that we can test it. We would be keen to see the code and a brief description of how you deployed the API.
+Once you've completed the challenge, please deploy your your application behind a public facing URL so that we can test it.
 
 Please also provide:
-* README.md with instructions on how to start the application
-* ANSWERS.md with the answers to the questions in QUESTIONS.md
-* One folder containing the technical test
+	* README.md with instructions on how to start the application
+	* ANSWERS.md with the answers to the questions in QUESTIONS.md
+	* One folder containing the technical test
 
 ## User Story
 Feature
@@ -23,7 +23,7 @@ Scenario: Retrieve Github user's repositories
 You can find in `design.png` the required designs to be implemented.
 
 ## Tech Stack
-The application needs to be implemented as a desktop web application, architectured in the following fashion:
+The application needs to be implemented as a desktop web application. Our tech stack is as follows, so it would be useful if your solution were implemented in a similar fashion (although this is not required). 
 	- Backend: nodejs backend (preferably Express) responsible of querying the Github APIs
 	- Frontend: preferably React based application, querying the nodejs backend
 
