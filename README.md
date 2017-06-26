@@ -2,7 +2,7 @@
 
 This challenge forms part of the interview process for the ASI Data Science engineering team. If you're interesting in helping us build a truly innovative data science platform, please get in contact at www.asidatascience.com.
 
-Once you've completed the challenge, please deploy your your application behind a public facing URL so that we can test it.
+Once you've completed the challenge, please deploy your application behind a public facing URL so that we can test it.
 
 Please also provide:
 * README.md with instructions on how to start the application
@@ -13,7 +13,7 @@ Please also provide:
 Feature
 
 	As a user running the application
-    I want to search Github users' repositories
+   	I want to search Github users' repositories
 
 Scenario: Retrieve Github user's repositories
 
