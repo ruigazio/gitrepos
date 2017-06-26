@@ -5,9 +5,9 @@ This challenge forms part of the interview process for the ASI Data Science engi
 Once you've completed the challenge, please deploy your your application behind a public facing URL so that we can test it. We would be keen to see the code and a brief description of how you deployed the API.
 
 Please also provide:
-- README.md with instructions on how to start the application
-- ANSWERS.md with the answers to the questions in QUESTIONS.md
-- One folder containing the technical test
+* README.md with instructions on how to start the application
+* ANSWERS.md with the answers to the questions in QUESTIONS.md
+* One folder containing the technical test
 
 ## User Story
 Feature
