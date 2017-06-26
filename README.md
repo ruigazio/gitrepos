@@ -1,10 +1,10 @@
 # Full Stack Engineer homework #
 
-Thank you for taking the time to do our technical test.
+This challenge forms part of the interview process for the ASI Data Science engineering team. If you're interesting in helping us build a truly innovative data science platform, please get in contact at www.asidatascience.com.
 
-Please submit your results by email to *email here* in a zip file.
+Once you've completed the challenge, please deploy your your application behind a public facing URL so that we can test it. We would be keen to see the code and a brief description of how you deployed the API.
 
-The archive needs to contain:
+Please also provide:
 - README.md with instructions on how to start the application
 - ANSWERS.md with the answers to the questions in QUESTIONS.md
 - One folder containing the technical test
