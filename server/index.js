@@ -22,6 +22,7 @@ app.get('/githubUserRepos/:username', function (req, res) {
   function errorHandler(e) {
     res.json(e)
     res.status(e.statusCode).send()
+    console.log( 'error handler')
   }
 
   const options = repos.getOptions(req.username)
@@ -37,9 +38,9 @@ function relayToClient(clientResponse, success, failure, {response, body}) {
   const handler = statusCode === 200 ? success : failure
   const client = handler( response, body )
   clientResponse
+    .set('Access-Control-Allow-Origin', '*')
     .status(client.status)
     .json( client.body )
-    .send()
 }
 
 function makeRequestP (options) {
