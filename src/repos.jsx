@@ -1,16 +1,30 @@
 import React from 'react'
 import Api from './api'
+import Style from '../css/repos'
 
 
 function Repo({repo}) {
-  const {name, desc, lang, stars, forks} = repo
+  const {name, desc, lang, stars, forks, url} = repo
   return (
     <li className='repo'>
-      <div className='name'>{name}</div>
+      <div className='name'>
+        <a href={url}> {name} </a>
+      </div>
       <div className='desc'>{desc}</div>
-      <div className='lang'>{lang}</div>
-      <div className='stars'>{stars}</div>
-      <div className='forks'>{forks}</div>
+      <div className='icons'>
+        <div className={'lang ' + lang}>
+          <span />
+          {lang}
+        </div>
+        <div className='stars'>
+          <span />
+          {stars}
+        </div>
+        <div className='forks'>
+          <span />
+          {forks}
+        </div>
+      </div>
     </li>
   )
 }
@@ -18,7 +32,7 @@ function Repo({repo}) {
 /****************** START Repo box branches *************************/
 function UserNotFound({username}) {
   return (
-    <div className='not-valid'>
+    <div className='container not-valid'>
       <h4> The user {username} was not found</h4>
     </div>
   )
@@ -26,7 +40,7 @@ function UserNotFound({username}) {
 
 function RepoLoading() {
   return (
-    <div className='loading'>
+    <div className='container loading'>
       <h4> Loading </h4>
     </div>
   )
@@ -34,7 +48,7 @@ function RepoLoading() {
 
 function RepoHelp() {
   return (
-    <div className='no-username'>
+    <div className='container no-username'>
       <h4> Type the github username above and press ENTER </h4>
     </div>
   )
@@ -42,7 +56,7 @@ function RepoHelp() {
 
 function EmptyRepos({username}) {
   return (
-    <div className='no-repos'>
+    <div className='container no-repos'>
       <h4> No repos for user {username} </h4>
     </div>
   )
@@ -50,14 +64,11 @@ function EmptyRepos({username}) {
 
 function RepoList(props) {
   return (
-    <div>
-      <h3>User {props.username} </h3>
-      <ul className="repo-list">
-        {
-          props.repos.map( repo => ( <Repo key={repo.name} repo={repo} /> ) )
-        }
-      </ul>
-    </div>
+    <ul className='container repo-list'>
+      {
+        props.repos.map( repo => ( <Repo key={repo.name} repo={repo} /> ) )
+      }
+    </ul>
   )
 }
 /****************** END Repo box branches *************************/
@@ -82,12 +93,13 @@ class UsernameInput extends React.Component {
 
   render() {
     return (
-      <div>
-        <label> username </label>
+      <div className='username-input'>
         <input
+          placeholder='type a valid Github username...'
           onBlur={this.userChangedFocus.bind(this)}
           onKeyUp={this.userChangedKey.bind(this)}
         />
+        <button> Get repositories </button>
       </div>
     )
   }
@@ -117,7 +129,7 @@ class Repos extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='repo-container'>
         <UsernameInput onUserChange={this.onUserChange.bind(this)} />
         <RepoContent {...this.state}/>
       </div>

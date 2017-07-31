@@ -18,10 +18,14 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         }
+      }, {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        include: path.resolve(__dirname, "css")
       }
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.scss']
   }
 }

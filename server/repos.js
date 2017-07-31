@@ -18,13 +18,16 @@ function getOptions(username) {
 function prune ( response, body ) {
   /********************** START OF FUNCTIONS  *********************/
   function pluck( repo ) {
-    const { name, description, language, stargazers_count, forks_count } = repo
+    const { name, description, language,
+      stargazers_count, forks_count, html_url
+    } = repo
     return {
       name,
       desc: description,
       lang: language,
       stars: stargazers_count,
-      forks: forks_count
+      forks: forks_count,
+      url: html_url
     }
   }
   /********************** END OF FUNCTIONS  ***********************/
