@@ -33,10 +33,11 @@ function prune ( response, body ) {
   /********************** END OF FUNCTIONS  ***********************/
 
   const repos = JSON.parse( body )
+  repos.sort( (a, b) => a.stargazers_count - b.stargazers_count )
 
   return {
     status: 200,
-    body: repos.map( pluck )
+    body: repos.slice(0, 10).map( pluck )
   }
 }
 

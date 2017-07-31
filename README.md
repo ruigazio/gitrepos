@@ -37,3 +37,6 @@ The application needs to be implemented as a desktop web application. Our tech s
 Bonus points:
 
 * Responsive layout
+## To run in your local
+`npm i && npm run server & npm run serve`
+and point your browser to http://localhost:8080
