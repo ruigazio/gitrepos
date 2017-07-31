@@ -1,15 +1,3 @@
-# Full Stack Engineer Coding Challenge #
-
-This challenge forms part of the interview process for the ASI Data Science engineering team. If you're interested in helping us build a truly innovative data science platform, please get in contact at https://www.asidatascience.com.
-
-Once you've completed the challenge, please deploy your application behind a public facing URL so that we can test it.
-
-Please also provide:
-
-* `README.md` with instructions on how to start the application
-* `ANSWERS.md` with the answers to the questions in `QUESTIONS.md`
-* One directory containing the technical test
-
 ## User Story
 
 Feature
@@ -37,6 +25,7 @@ The application needs to be implemented as a desktop web application. Our tech s
 Bonus points:
 
 * Responsive layout
+
 ## To run in your local
 `npm i && npm run server & npm run serve`
 and point your browser to http://localhost:8080
